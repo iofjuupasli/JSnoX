@@ -1,6 +1,6 @@
 var test = require('tape')
 var React = require('react')
-var d = require('..')(React)
+var d = require('..')
 
 var render = function(domTree) {
     return React.renderToStaticMarkup(domTree)

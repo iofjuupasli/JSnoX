@@ -12,7 +12,7 @@ with React v0.12 and above.
 ```js
 var React = require('react')
 var MyOtherComponent = require('./some/path.js')
-var d = require('jsnox')(React)
+var d = require('jsnox')
 
 var LoginForm = React.createClass({
     submitLogin: function() { ... },
@@ -35,7 +35,7 @@ var LoginForm = React.createClass({
 ```javascript
 // Create a function, d, that parses spec strings into React DOM:
 var React = require('react')
-var d = require('jsnox')(React)
+var d = require('jsnox')
 
 // The function returned by JSnoX takes 3 arguments:
 // specString (required)    - Specifies the tagName and (optionally) attributes
@@ -102,7 +102,7 @@ project directly and it will fall back to exporting a global variable as
   prevent [warnings about `createFactory`](https://gist.github.com/sebmarkbage/ae327f2eda03bf165261). For example:
 
   ```js
-  var d = require('jsnox')(React)
+  var d = require('jsnox')
 
   // Good:
   React.render(d(MyTopLevelComponent, { prop1: 'foo'}), document.body)
